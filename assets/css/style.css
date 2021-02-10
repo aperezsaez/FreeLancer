@@ -10,6 +10,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -158,6 +159,11 @@ h1,h2,h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.servicios, .nav-prin, .formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .formulario {
